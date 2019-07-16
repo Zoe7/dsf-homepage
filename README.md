@@ -1,4 +1,3 @@
-Homepage for the danish speedcuboing association.
+Homepage for the danish speedcubing association, currently under construction.
 
-Built using Gatsby and styled components.
-Content powered by GraphQL CMS.
+Built using Gatsby and styled components, content powered by GraphCMS.
