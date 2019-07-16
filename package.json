@@ -1,7 +1,7 @@
 {
-  "name": "gatsby-starter-hello-world",
+  "name": "DSF homepage",
   "private": true,
-  "description": "A simplified bare-bones starter for Gatsby",
+  "description": "The homepage for DSF (dansk speedcubing forening)",
   "version": "0.1.0",
   "license": "MIT",
   "scripts": {
@@ -13,12 +13,16 @@
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\""
   },
   "dependencies": {
-    "gatsby": "^2.4.0",
+    "gatsby": "^2.7.1",
+    "gatsby-source-graphql": "^2.0.18",
+    "polished": "^3.4.1",
     "react": "^16.8.6",
-    "react-dom": "^16.8.6"
+    "react-dom": "^16.8.6",
+    "react-markdown": "^4.1.0",
+    "styled-components": "^4.2.0"
   },
   "devDependencies": {
-    "prettier": "^1.17.0"
+    "prettier": "^1.17.1"
   },
   "repository": {
     "type": "git",
