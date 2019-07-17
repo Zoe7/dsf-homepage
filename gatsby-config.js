@@ -12,7 +12,14 @@ module.exports = {
           "https://api-euwest.graphcms.com/v1/cjryto5wd3lza01gtcfgarpde/master"
       }
     },
-    "gatsby-plugin-styled-components"
+    "gatsby-plugin-styled-components",
+    `gatsby-transformer-sharp`,
+    `gatsby-plugin-sharp`,
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/src/images/`
+      }
+    }
   ]
 };
-//https://api-euwest.graphcms.com/v1/cjryto5wd3lza01gtcfgarpde/master
