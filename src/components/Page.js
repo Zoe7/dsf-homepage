@@ -11,7 +11,7 @@ export default ({ pageContext: { content } }) => {
       primary: "#db2516",
       lightgrey: "#f4f7f6"
     },
-    width: "1200px"
+    width: "1080px"
   };
 
   const GlobalStyle = createGlobalStyle`
@@ -28,6 +28,49 @@ export default ({ pageContext: { content } }) => {
   const Content = styled.div`
     margin: auto;
     max-width: ${theme.width};
+
+    h1 {
+      font-size: 2.2rem;
+      font-weight: 500;
+    }
+
+    h2 {
+      font-size: 2rem;
+      font-weight: 500;
+    }
+
+    p {
+      max-width: 900px;
+    }
+
+    a {
+      color: ${theme.color.main};
+      text-decoration: none;
+      position: relative;
+
+      :after {
+        content: "";
+
+        width: 100%;
+        position: absolute;
+        left: 0;
+        bottom: -2px;
+
+        border-bottom: 2px solid ${theme.color.primary};
+      }
+
+      &:hover,
+      &:focus {
+        color: ${theme.color.primary};
+      }
+    }
+
+    pre {
+      font-family: inherit;
+      background: ${theme.color.lightgrey};
+      padding: 30px 40px;
+      width: fit-content;
+    }
   `;
 
   return (
